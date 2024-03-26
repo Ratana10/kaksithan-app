@@ -1,8 +1,15 @@
+<script setup lang="">
+useHead({
+   title: "Kaksithan | Contact Us",
+});
+</script>
+
 <template>
    <div class="container mx-auto p-8 space-y-16">
       <!-- Card -->
       <div class="flex gap-8 items-center justify-center">
          <Card
+            image="icons/phone.png"
             title="Hot Line"
             :object="[
                {
@@ -16,6 +23,7 @@
             ]"
          />
          <Card
+            image="icons/vector.png"
             title="Address"
             :object="[
                {
@@ -26,6 +34,7 @@
             ]"
          />
          <Card
+            image="icons/clock.png"
             title="Working Hours"
             :object="[
                {
@@ -39,7 +48,7 @@
             ]"
          />
          <Card
-         
+            image="icons/mail.png"
             title="Email"
             :object="[
                {
