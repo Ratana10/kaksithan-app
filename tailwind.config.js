@@ -10,9 +10,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         "primary": "#6FAB37",
         "Secondary": "#2AABEE",
+      },
+      backgroundImage: {
+        "hero": "url('/img/bg-hero.jpg')"
       }
     },
   },

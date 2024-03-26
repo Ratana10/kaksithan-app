@@ -1,3 +1,3 @@
 <template>
-   <div class="flex justify-center">Welcome</div>
+   <div class="bg-hero w-96 h-96">Welcome</div>
 </template>

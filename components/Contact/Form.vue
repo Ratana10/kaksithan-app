@@ -57,7 +57,7 @@
          </div>
          <div class="flex justify-end mt-4">
             <button
-               class="text-white bg-primary px-4 py-2 flex justify-center items-center"
+               class="text-white bg-primary px-4 py-2 flex justify-center items-center rounded-md"
             >
                <img
                   class="w-4 h-4 mr-2"
