@@ -1,3 +1,25 @@
+<template>
+   <div>
+      <div class="bg-hero w-[1920px] h-[1209px]">
+         <div class="container mx-auto p-8 space-y-16">
+            <!-- Card -->
+            <div class="flex gap-8 items-center justify-center">
+               <ContactCard
+                  v-for="(item, index) in contactCard"
+                  :key="index"
+                  :title="item.title"
+                  :image="item.image"
+                  :object="item.object"
+               />
+            </div>
+            <ContactContent />
+         </div>
+      </div>
+      <div class="container mx-auto p-8 space-y-16">
+         <ContactForm />
+      </div>
+   </div>
+</template>
 <script setup lang="">
 useHead({
    title: "Kaksithan | Contact Us",
@@ -63,26 +85,3 @@ const contactCard = [
    },
 ];
 </script>
-
-<template>
-   <div>
-      <div class="bg-hero">
-         <div class="container mx-auto p-8 space-y-16">
-            <!-- Card -->
-            <div class="flex gap-8 items-center justify-center">
-               <ContactCard
-                  v-for="(item, index) in contactCard"
-                  :key="index"
-                  :title="item.title"
-                  :image="item.image"
-                  :object="item.object"
-               />
-            </div>
-            <ContactContent />
-         </div>
-      </div>
-      <div class="container mx-auto p-8 space-y-16">
-         <ContactForm />
-      </div>
-   </div>
-</template>

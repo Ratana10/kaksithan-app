@@ -1,3 +1,7 @@
 <template>
-   <div class="bg-hero w-96 h-96">Welcome</div>
+   <div class="mt-10 flex items-center justify-center">
+      <NuxtLink to="/contact" class="py-4 px-8 bg-primary"
+         >Go to Contact Page</NuxtLink
+      >
+   </div>
 </template>
