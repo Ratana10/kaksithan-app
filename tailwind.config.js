@@ -16,6 +16,10 @@ export default {
       },
       backgroundImage: {
         "hero": "url('/img/bg-hero.jpg')"
+      },
+      fontFamily:{
+        "DM-Sans": "DM Sans",
+        "Inter": "Inter",
       }
     },
   },

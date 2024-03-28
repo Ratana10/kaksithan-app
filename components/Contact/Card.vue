@@ -1,13 +1,22 @@
+
 <template>
    <div
-      class="bg-white text-center rounded-xl border shadow-lg p-10 w-[300px] h-[370px]"
+      class="w-[300px] h-[372px] py-10 gap-10 border-4 border-white rounded-lg bg-white"
    >
-      <NuxtImg class="w-11 h-11 mx-auto" :src="`/img/${image}`" />
-      <h1 class="text-lg text-primary">{{ title }}</h1>
-      <div v-for="(item, index) in object" :key="index" class="">
-         <div class="text-start mt-6">
-            <p class="text-sm font-bold">{{ item.text }}</p>
-            <p class="text-sm">{{ item.description }}</p>
+      <div class="flex flex-col items-center mb-10">
+         <NuxtImg
+            class="w-[40px] h-[40px] mx-auto object-contain"
+            :src="`/img/${image}`"
+         />
+         <h1 class="text-xl font-bold mt-2" style="color: #6fab37">{{ title }}</h1>
+      </div>
+
+      <div class="gap-4 px-6 flex flex-col">
+         <div v-for="(item, index) in object" :key="index" class="">
+            <div class="">
+               <p class="text-base font-semibold">{{ item.text }}</p>
+               <p class="text-base">{{ item.description }}</p>
+            </div>
          </div>
       </div>
    </div>

@@ -1,10 +1,11 @@
 <template>
-   <div>
-      <div class="bg-hero w-[1920px] h-[1209px]">
-         <div class="container mx-auto p-8 space-y-16">
+   <div class="">
+      <div class="h-[1208px] bg-hero bg-cover py-20 flex flex-col gap-16">
+         <div class="flex flex-col items-center gap-16">
             <!-- Card -->
-            <div class="flex gap-8 items-center justify-center">
+            <div class="flex items-center justify-center gap-10">
                <ContactCard
+                  class=""
                   v-for="(item, index) in contactCard"
                   :key="index"
                   :title="item.title"
@@ -12,11 +13,14 @@
                   :object="item.object"
                />
             </div>
-            <ContactContent />
+            <!-- Contact SocialMedia -->
+            <ContactSocialMedia />
          </div>
       </div>
-      <div class="container mx-auto p-8 space-y-16">
-         <ContactForm />
+      <div class="py-20 flex flex-col gap-16">
+         <div class="flex flex-col items-center gap-16">
+            <ContactForm />
+         </div>
       </div>
    </div>
 </template>
